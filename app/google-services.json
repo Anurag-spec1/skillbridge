@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "384050297795",
+    "project_id": "task-earner-2bedd",
+    "storage_bucket": "task-earner-2bedd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384050297795:android:6060f0b1cc56295f5a9b76",
+        "android_client_info": {
+          "package_name": "com.example.taskearner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcUeTNJCHog4e92k0TPnI0mXO8dlYeiis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

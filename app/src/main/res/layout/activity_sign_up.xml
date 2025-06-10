@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebg"
+    tools:context=".SignUp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:cardBackgroundColor="#80000000"
+        app:cardElevation="6dp" />
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/carbon_blue_900"
+        app:SpinKit_Style="FadingCircle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <carbon.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <carbon.widget.LinearLayout
+            android:id="@+id/headlineCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_font"
+                android:text="Let's"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_font_2"
+                android:text=" Sign"
+                android:textColor="@color/colorAccentLight"
+                android:textSize="30sp" />
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_font"
+                android:text=" You Up"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:id="@+id/etsCont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <carbon.widget.ImageView
+                android:id="@+id/signUpImg"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile"
+                app:carbon_cornerRadius="60dp" />
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/main_font"
+                android:text="Upload Profile Image"
+                android:textColor="@color/colorAccentLightest"
+                android:textSize="18sp" />
+
+            <carbon.widget.EditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/sm_user"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorAccentLightest"
+                android:fontFamily="@font/main_font"
+                android:hint="Full Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccentLightest"
+                android:textSize="17sp"
+                app:carbon_backgroundTint="@color/colorAccentLightest"
+                app:carbon_tint="@color/colorAccentLightest" />
+
+            <carbon.widget.EditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/sm_email"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorAccentLightest"
+                android:fontFamily="@font/main_font"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccentLightest"
+                android:textSize="17sp"
+                app:carbon_backgroundTint="@color/colorAccentLightest"
+                app:carbon_tint="@color/colorAccentLightest" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/passwordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/colorAccentLightest"
+                    android:drawableLeft="@drawable/sm_password"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorAccentLightest"
+                    android:fontFamily="@font/main_font"
+                    android:hint="Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingEnd="50dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/colorAccentLightest"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/togglePassword"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="Toggle Password Visibility"
+                    android:src="@drawable/ic_visibility_off"
+                    android:tint="@color/colorAccentLightest" />
+            </RelativeLayout>
+
+            <AutoCompleteTextView
+                android:id="@+id/domainET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/sm_user"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorAccentLightest"
+                android:fontFamily="@font/main_font"
+                android:hint="Tech Domain(Dev,Designer...)"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccentLightest"
+                android:textSize="17sp"
+                app:backgroundTint="@color/colorAccentLightest"
+                app:tint="@color/colorAccentLightest" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.Button
+            android:id="@+id/continueBtn"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/colorAccentLight"
+            android:fontFamily="@font/main_font_2"
+            android:gravity="center"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:carbon_cornerRadius="10dp"
+            app:carbon_elevation="6dp"
+            app:carbon_elevationShadowColor="@color/black"
+            app:carbon_rippleColor="@color/colorAccentLight"
+            app:carbon_rippleStyle="background" />
+
+    </carbon.widget.LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
