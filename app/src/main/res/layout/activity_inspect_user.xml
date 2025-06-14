@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".InspectUser">
+
+    <carbon.widget.ImageView
+        android:id="@+id/mainImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_1" />
+
+    <carbon.widget.ImageView
+        android:id="@+id/childImg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_1"
+        app:carbon_cornerRadius="40dp"
+        app:carbon_elevation="5dp"
+        app:carbon_stroke="@color/white"
+        app:carbon_strokeWidth="2dp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/childImg"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/main_font"
+        android:text="Anurag Shrivastav"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/skill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/main_font"
+        android:text="Mobile Application Developer Kotlin"
+        android:textColor="@color/carbon_grey_600"
+        android:textSize="16sp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/organisation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skill"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/main_font"
+        android:text="Kiet Group Of Institutions"
+        android:textColor="@color/carbon_grey_600"
+        android:textSize="15sp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/constTxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/organisation"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/main_font"
+        android:text="Skills"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/skillsreal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constTxt3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/main_font"
+        android:text="XML,JAVA,ANDROID STUDIO,KOTLIN..."
+        android:textColor="@color/carbon_grey_600"
+        android:textSize="15sp" />
+
+
+    <carbon.widget.TextView
+        android:id="@+id/constTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skillsreal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/main_font"
+        android:text="Works"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <carbon.widget.ImageView
+        android:id="@+id/github"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/constTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/github"
+        app:carbon_cornerRadius="25dp"
+        app:carbon_stroke="@color/carbon_orange_800"
+        app:carbon_strokeWidth="2dp" />
+
+    <carbon.widget.ImageView
+        android:id="@+id/linkedin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/constTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/github"
+        android:scaleType="fitXY"
+        android:src="@drawable/linkedin"
+        app:carbon_cornerRadius="25dp"
+        app:carbon_stroke="@color/carbon_orange_800"
+        app:carbon_strokeWidth="2dp" />
+
+
+    <carbon.widget.TextView
+        android:id="@+id/constTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linkedin"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/main_font"
+        android:text="Contact Via"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <carbon.widget.ImageView
+        android:id="@+id/gmail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/constTxt2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/gmail"
+        app:carbon_cornerRadius="25dp"
+        app:carbon_stroke="@color/carbon_orange_800"
+        app:carbon_strokeWidth="2dp" />
+
+    <carbon.widget.ImageView
+        android:id="@+id/instagram"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/constTxt2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/gmail"
+        android:scaleType="fitXY"
+        android:src="@drawable/instagram"
+        app:carbon_cornerRadius="25dp"
+        app:carbon_stroke="@color/carbon_orange_800"
+        app:carbon_strokeWidth="2dp" />
+
+    <carbon.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:carbon_cornerRadius="5dp"
+        android:background="@color/carbon_blue_600"
+        android:fontFamily="@font/main_font"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:layout_below="@id/mainImg"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/follow"/>
+
+    <carbon.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unfollow"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        app:carbon_cornerRadius="5dp"
+        android:background="@color/carbon_blue_600"
+        android:fontFamily="@font/main_font"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/mainImg"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/unfollow"/>
+
+
+
+
+</carbon.widget.RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebg"
+    android:fitsSystemWindows="true"
+    tools:context=".Profile">
+
+    <carbon.widget.ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/user_circle_bg"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/userprofile"
+        app:carbon_cornerRadius="80dp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/main_font_2"
+        android:text="Anurag Shrivastav"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/userMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/main_font_2"
+        android:text="anurag13360@gmail.com"
+        android:textColor="#365E62"
+        android:textSize="16sp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/constTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userMail"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/main_font_2"
+        android:text="More"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <carbon.widget.LinearLayout
+        android:id="@+id/linLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constTxt"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="#070324"
+        android:orientation="horizontal"
+        app:carbon_cornerRadius="10dp"
+        app:carbon_stroke="@color/white"
+        app:carbon_strokeWidth="1dp">
+
+        <carbon.widget.TextView
+            android:id="@+id/btnEdtProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/main_font"
+            android:padding="15dp"
+            android:text="Edit Your Profile"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <carbon.widget.ImageView
+            android:id="@+id/next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/nexttt"
+            app:carbon_tint="@color/white" />
+
+
+    </carbon.widget.LinearLayout>
+
+    <carbon.widget.LinearLayout
+        android:id="@+id/linLay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linLay"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="#070324"
+        android:orientation="horizontal"
+        app:carbon_cornerRadius="10dp"
+        app:carbon_stroke="@color/white"
+        app:carbon_strokeWidth="1dp">
+
+        <carbon.widget.TextView
+            android:id="@+id/followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/main_font"
+            android:padding="15dp"
+            android:text="Followers"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <carbon.widget.ImageView
+            android:id="@+id/next2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/nexttt"
+            app:carbon_tint="@color/white" />
+
+
+    </carbon.widget.LinearLayout>
+
+    <carbon.widget.LinearLayout
+        android:id="@+id/linLay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linLay2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="#070324"
+        android:orientation="horizontal"
+        app:carbon_cornerRadius="10dp"
+        app:carbon_stroke="@color/white"
+        app:carbon_strokeWidth="1dp">
+
+        <carbon.widget.TextView
+            android:id="@+id/following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/main_font"
+            android:padding="15dp"
+            android:text="Following"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <carbon.widget.ImageView
+            android:id="@+id/next3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/nexttt"
+            app:carbon_tint="@color/white" />
+
+
+    </carbon.widget.LinearLayout>
+
+    <carbon.widget.TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linLay3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="#101010"
+        android:fontFamily="@font/main_font_2"
+        android:paddingStart="30dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:carbon_cornerRadius="20dp"
+        app:carbon_stroke="@color/white"
+        app:carbon_strokeWidth="1dp" />
+
+
+</carbon.widget.RelativeLayout>

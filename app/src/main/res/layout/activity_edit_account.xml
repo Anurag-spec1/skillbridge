@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebg"
+    android:fitsSystemWindows="true"
+    tools:context=".EditAccount">
+
+    <carbon.widget.LinearLayout
+        android:id="@+id/linLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <carbon.widget.ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:padding="3dp"
+            android:src="@drawable/back"
+            app:carbon_tint="@color/white" />
+
+        <carbon.widget.TextView
+            android:id="@+id/constTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/main_font_2"
+            android:text="Edit Your Profile"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </carbon.widget.LinearLayout>
+
+    <carbon.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linLay"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+
+        <carbon.widget.EditText
+            android:id="@+id/github"
+            style="@style/EditProfileInput"
+            android:hint="Enter your github url" />
+
+        <carbon.widget.EditText
+            android:id="@+id/linkedin"
+            style="@style/EditProfileInput"
+            android:hint="Enter your linkedin url" />
+
+        <carbon.widget.EditText
+            android:id="@+id/instagram"
+            style="@style/EditProfileInput"
+            android:hint="Enter your instagram url" />
+
+        <carbon.widget.EditText
+            android:id="@+id/skill"
+            style="@style/EditProfileInput"
+            android:hint="Enter your skill" />
+
+        <carbon.widget.EditText
+            android:id="@+id/achievement"
+            style="@style/EditProfileInput"
+            android:hint="Enter your achievements" />
+
+        <carbon.widget.EditText
+            android:id="@+id/organisation"
+            style="@style/EditProfileInput"
+            android:hint="Enter your organisation name" />
+
+        <carbon.widget.TextView
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/carbon_blue_900"
+            android:fontFamily="@font/main_font_2"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:carbon_cornerRadius="10dp"
+            app:carbon_stroke="@color/white"
+            app:carbon_strokeWidth="2dp" />
+
+    </carbon.widget.LinearLayout>
+
+</carbon.widget.RelativeLayout>

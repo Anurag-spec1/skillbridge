@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebg"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeUploadsUsers">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <carbon.widget.ImageView
+        android:id="@+id/menu_home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/menu"
+        app:carbon_tint="@color/white" />
+
+    <carbon.widget.TextView
+        android:id="@+id/User_name_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/menu_home"
+        android:fontFamily="@font/main_font"
+        android:text="Hi, User"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <carbon.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/User_name_home"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="2dp"
+        android:text="What are you looking today?"
+        android:textColor="@color/carbon_lightBlue_a100"
+        android:textSize="15sp" />
+
+
+    <carbon.widget.ImageView
+        android:id="@+id/profile_home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/profile"
+        app:carbon_cornerRadius="20dp" />
+
+    <carbon.widget.EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/User_name_home"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/white"
+        android:hint="Search Projects"
+        android:imeOptions="actionSearch"
+        android:paddingStart="20dp"
+        android:textColor="#697D87"
+        android:textSize="16sp"
+        app:carbon_cornerRadius="17dp"
+        app:carbon_elevation="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchEditText"
+        android:layout_margin="20dp"
+        tools:listitem="@layout/item_uploads" />
+
+    <carbon.widget.ImageView
+        android:id="@+id/search_home"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/User_name_home"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/search_icon"
+        app:carbon_elevation="8dp"
+        app:carbon_elevationShadowColor="@color/black"
+        app:carbon_tint="@color/black" />
+
+
+</RelativeLayout>

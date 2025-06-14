@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    app:carbon_cornerRadius="15dp"
+    app:carbon_elevation="8dp">
+
+    <carbon.widget.ImageView
+        android:id="@+id/UserImage"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile"
+        app:carbon_cornerRadius="20dp" />
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/userName"
+        android:fontFamily="@font/main_font"
+        android:gravity="end"
+        android:text="jai hind"
+        android:textColor="@color/carbon_red_900"
+        android:textSize="14sp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/UserImage"
+        android:fontFamily="@font/main_font"
+        android:text="Anurag"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/domain"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/userName"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/UserImage"
+        android:fontFamily="@font/main_font"
+        android:text="Android Developer"
+        android:textColor="@color/colorAccentLight"
+        android:textSize="16sp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserImage"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/main_font"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        android:textColor="#625353" />
+
+    <carbon.widget.ImageView
+        android:id="@+id/prototypeImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/link"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile"
+        app:carbon_cornerRadius="15dp" />
+
+
+    <TextView
+        android:id="@+id/Source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/main_font"
+        android:text="Source"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <carbon.widget.TextView
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@id/Source"
+        android:fontFamily="@font/main_font"
+        android:text="https://google.com"
+        android:textColor="@color/carbon_blue_400"
+        android:textSize="16sp" />
+
+
+    <carbon.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prototypeImg"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <carbon.widget.ImageView
+                android:id="@+id/like"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="2dp"
+                android:src="@drawable/like" />
+
+            <TextView
+                android:id="@+id/likecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:text="0"
+                android:textColor="@color/carbon_red_900"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <carbon.widget.ImageView
+                android:id="@+id/comment"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="2dp"
+                android:src="@drawable/comment" />
+
+            <TextView
+                android:id="@+id/comcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:text="0"
+                android:textColor="@color/carbon_red_900"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <carbon.widget.ImageView
+            android:id="@+id/share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:src="@drawable/share" />
+
+    </carbon.widget.LinearLayout>
+
+</carbon.widget.RelativeLayout>

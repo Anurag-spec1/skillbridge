@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebg"
+    tools:context=".AddUpload">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:cardBackgroundColor="#80000000"
+        app:cardElevation="6dp" />
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/carbon_blue_900"
+        app:SpinKit_Style="FadingCircle" />
+
+    <TextView
+        android:id="@+id/topBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/main_font"
+        android:text="Post"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+    <carbon.widget.EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/container"
+        android:layout_below="@id/topBar"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:fontFamily="@font/main_font"
+        android:gravity="top|start"
+        android:hint="Write Your Content Here"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorAccentLight"
+        android:textSize="16sp"
+        app:carbon_cornerRadiusTopEnd="10dp"
+        app:carbon_cornerRadiusTopStart="10dp"
+        app:carbon_elevation="5dp" />
+
+    <carbon.widget.LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        app:carbon_cornerRadiusBottomEnd="10dp"
+        app:carbon_cornerRadiusBottomStart="10dp"
+        app:carbon_elevation="5dp">
+
+        <carbon.widget.ImageView
+            android:id="@+id/profile_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/add2"
+            app:carbon_cornerRadius="25dp"
+            app:carbon_elevation="5dp" />
+
+        <carbon.widget.EditText
+            android:id="@+id/link"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/colorAccentLightest"
+            android:fontFamily="@font/main_font"
+            android:hint="Enter Your Project Link"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/carbon_blue_900"
+            app:carbon_cornerRadius="8dp"
+            app:carbon_elevation="5dp" />
+
+        <carbon.widget.TextView
+            android:id="@+id/post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/carbon_blue_500"
+            android:fontFamily="@font/main_font"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="5dp"
+            android:text="Post"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:carbon_cornerRadius="10dp"
+            app:carbon_elevation="5dp" />
+
+
+    </carbon.widget.LinearLayout>
+
+
+</carbon.widget.RelativeLayout>
