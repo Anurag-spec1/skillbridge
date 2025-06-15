@@ -33,6 +33,10 @@ class EditAccount : AppCompatActivity() {
             saveProfileData()
         }
 
+        binding.back.setOnClickListener {
+            onBackPressed()
+        }
+
         loadExistingData()
     }
 

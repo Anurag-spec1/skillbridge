@@ -114,7 +114,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/main_font"
             android:padding="15dp"
-            android:text="Followers"
+            android:text="Search Users"
             android:textColor="@color/white"
             android:textSize="18sp" />
 

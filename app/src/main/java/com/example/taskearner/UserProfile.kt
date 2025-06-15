@@ -1,6 +1,7 @@
 package com.example.taskearner
 
 data class UserProfile(
+    var uid : String="",
     val name: String = "",
     val domain: String = "",
     val email: String = "",

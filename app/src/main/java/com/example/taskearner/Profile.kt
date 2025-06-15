@@ -93,7 +93,8 @@ class Profile : Fragment() {
         }
 
         binding.linLay2.setOnClickListener {
-            Toast.makeText(requireContext(), "Under Development", Toast.LENGTH_SHORT).show()
+            val intent = Intent(requireContext(), AllUsersActivity::class.java)
+            startActivity(intent)
         }
 
         binding.linLay3.setOnClickListener {
