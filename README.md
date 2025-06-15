@@ -1,6 +1,6 @@
 # SkillBridge - Developer Networking Platform 🔗
 
-!![Untitled design](https://github.com/user-attachments/assets/0c1b6db6-efab-49aa-9512-5ea134f0f3e8)
+![Untitled design](https://github.com/user-attachments/assets/0c1b6db6-efab-49aa-9512-5ea134f0f3e8)
  
 
 **Connect | Collaborate | Grow**  
