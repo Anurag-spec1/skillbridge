@@ -32,7 +32,10 @@ SkillBridge is an Android platform designed to help developers showcase their sk
 ## 📸 Screenshots
 | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-| ![Home Screen](https://via.placeholder.com/300x600?text=Home)  | ![Search](https://via.placeholder.com/300x600?text=Search) | ![Profile](https://via.placeholder.com/300x600?text=Profile) |
+| ![Home Screen]![IMG-20250615-WA0023](https://github.com/user-attachments/assets/eab3389b-3d81-4f48-9a61-63398b3a1841)
+  | ![Search]![IMG-20250615-WA0025](https://github.com/user-attachments/assets/5868b4e6-de68-48ab-801f-1b228cf1dc30)
+ | ![Profile]![IMG-20250615-WA0024](https://github.com/user-attachments/assets/2ca1b16f-3ad0-4757-a66f-17fb75610813)
+ |
 
 ## 🚀 Getting Started
 ### Prerequisites
