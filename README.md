@@ -1,8 +1,7 @@
 # SkillBridge - Developer Networking Platform 🔗
 
-![SkillBridge Banner](![Uploading WhatsApp Image 2025-06-15 at 20.22.10_280718e8.jpg…]()
-) 
-*(Replace with actual app screenshot or banner)*
+!![Untitled design](https://github.com/user-attachments/assets/0c1b6db6-efab-49aa-9512-5ea134f0f3e8)
+ 
 
 **Connect | Collaborate | Grow**  
 SkillBridge is an Android platform designed to help developers showcase their skills, discover peers, and build meaningful professional connections in the tech community.
@@ -39,8 +38,3 @@ SkillBridge is an Android platform designed to help developers showcase their sk
 ### Prerequisites
 - Android Studio (Latest Version)
 - Firebase project configuration
-
-### Installation
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/yourusername/SkillBridge.git
